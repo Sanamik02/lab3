@@ -1,10 +1,11 @@
-n = input()
+n= input()
 
-s = len(n)
 
-for i in range(s//2):
-    if n[i] != n[-1-i]:
-        print("It's not palindrome")
-        quit()
+for i in range(0, len(n)//2):
+   if n[i] != n[-i-1]:
+       ans = False
+       break
 
-print("It's palindrome")
+if ans != True:
+     print("NO")
+else: print("YES") 
